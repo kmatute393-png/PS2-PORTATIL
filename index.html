@@ -1,0 +1,125 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0D0E12">
+  <meta name="description" content="PS2 Swing: proyecto independiente de consola PS2 Slim portátil. Conoce el desarrollo, las características previstas y cómo apoyar el prototipo.">
+  <meta property="og:title" content="PS2 Swing | La leyenda continúa en tus manos">
+  <meta property="og:description" content="Conoce el proyecto de PS2 portátil, sus avances y cómo apoyar su desarrollo.">
+  <meta property="og:type" content="website">
+  <title>PS2 Swing — La leyenda continúa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="intro-open">
+  <!-- La intro mantiene el video original del repositorio: img/ps2-intro.mp4 -->
+  <section class="intro" id="intro" aria-label="Introducción de PS2 Swing">
+    <div class="intro-grid" aria-hidden="true"></div>
+    <div class="intro-orbit intro-orbit-one" aria-hidden="true"></div>
+    <div class="intro-orbit intro-orbit-two" aria-hidden="true"></div>
+    <div class="intro-content" id="intro-content">
+      <div class="overline intro-kicker"><span class="status-dot"></span> PROYECTO EN DESARROLLO <span class="mono">/ 2026</span></div>
+      <h1 class="intro-logo">PS2 <span>SWING</span></h1>
+      <p>La leyenda continúa en tus manos.</p>
+      <button type="button" class="start-button" id="start-btn"><span class="play-triangle" aria-hidden="true"></span> START <span class="button-corner" aria-hidden="true">↗</span></button>
+      <span class="intro-hint">PULSA PARA INICIAR LA EXPERIENCIA</span>
+    </div>
+    <div class="intro-player" id="intro-player" hidden>
+      <video id="intro-video" playsinline webkit-playsinline muted preload="metadata" poster="img/consola.jpg" aria-label="Vídeo de introducción de PS2 Swing">
+        <source src="img/ps2-intro.mp4" type="video/mp4">
+        Tu navegador no puede reproducir este vídeo.
+      </video>
+      <div class="video-actions">
+        <button type="button" id="audio-btn" class="video-action" aria-label="Activar sonido">ACTIVAR SONIDO</button>
+        <button type="button" id="skip-btn" class="video-action">SALTAR INTRO <span aria-hidden="true">→</span></button>
+      </div>
+    </div>
+  </section>
+
+  <div id="site" class="site" hidden>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio de PS2 Swing"><span class="brand-mark">P<span>S</span>2</span> <strong>SWING</strong></a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="#caracteristicas">CARACTERÍSTICAS</a>
+        <a href="#proyecto">EL PROYECTO</a>
+        <a href="#desarrollo">AVANCES</a>
+      </nav>
+      <a href="#apoyar" class="nav-cta">APOYAR <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main>
+      <section class="hero section-shell" id="inicio">
+        <div class="hero-background-glow" aria-hidden="true"></div>
+        <div class="hero-left">
+          <div class="eyebrow"><span class="eyebrow-line"></span> UNA NUEVA FORMA DE JUGAR <span class="eyebrow-number">/ 001</span></div>
+          <h1>EL PASADO<br>NO SE <span>APAGA.</span><br><em>EVOLUCIONA.</em></h1>
+          <p class="hero-description">La esencia de PlayStation 2, transformada en una experiencia portátil. Un proyecto independiente que une nostalgia, ingeniería y diseño.</p>
+          <div class="hero-actions">
+            <a class="primary-btn" href="#caracteristicas">DESCUBRE PS2 SWING <span aria-hidden="true">↗</span></a>
+            <a class="text-btn" href="#proyecto">CONOCE LA HISTORIA <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="hero-details"><span><i class="mini-dot"></i> PROTOTIPO EN DESARROLLO</span><span>DISEÑADO PARA LOS CLÁSICOS</span></div>
+        </div>
+        <div class="hero-right">
+          <div class="hero-image-halo" aria-hidden="true"></div>
+          <div class="hero-image-frame">
+            <img class="hero-console" src="img/consola.jpg" alt="Imagen de referencia de la consola portátil PS2 Swing" loading="eager" decoding="async">
+            <div class="hero-image-fallback" aria-hidden="true"><div class="fallback-controller">PS2 <span>SWING</span></div><span>VISUAL DEL PROYECTO</span></div>
+          </div>
+          <div class="image-annotation top-annotation"><span class="annotation-line"></span> CONCEPTO PORTÁTIL <strong>V3.1</strong></div>
+          <div class="image-annotation bottom-annotation"><span class="annotation-cross">✳</span> <span>7.0” DISPLAY</span></div>
+        </div>
+        <a class="scroll-invite" href="#caracteristicas">DESLIZA PARA EXPLORAR <span aria-hidden="true">↓</span></a>
+      </section>
+
+      <div class="tech-ticker" aria-label="Tecnologías previstas"><div class="ticker-inner"><span>HARDWARE ORIGINAL PS2</span><b>✳</b><span>PANTALLA 7 PULGADAS</span><b>✳</b><span>OSD-XMB</span><b>✳</b><span>DISEÑO PERSONALIZADO</span><b>✳</b><span>BATERÍA RECARGABLE</span><b>✳</b><span>HARDWARE ORIGINAL PS2</span><b>✳</b><span>PANTALLA 7 PULGADAS</span><b>✳</b></div></div>
+
+      <section class="features section-shell section-pad" id="caracteristicas">
+        <div class="section-heading">
+          <div><div class="eyebrow"><span class="eyebrow-line"></span> LA EXPERIENCIA <span class="eyebrow-number">/ 002</span></div><h2>DISEÑADA PARA<br><span>SENTIRLA.</span></h2></div>
+          <p>Descubre cada detalle del concepto. Pulsa el botón para revelar la siguiente característica, una al lado de la otra.</p>
+        </div>
+        <div class="feature-toolbar">
+          <span class="toolbar-caption">EXPLORA LAS CARACTERÍSTICAS <span class="muted-mobile">· DESLIZA HACIA LOS LADOS</span></span>
+          <span class="feature-counter" id="feature-counter" aria-live="polite">01 <span>/ 06</span></span>
+        </div>
+        <div class="feature-viewport" id="feature-viewport" tabindex="0" aria-label="Tarjetas de características, desplazamiento horizontal">
+          <div class="feature-track" id="feature-track">
+            <article class="feature-card is-revealed" data-number="01"><div class="card-top"><span>01 / VISUAL</span><span class="card-symbol">▣</span></div><div class="feature-art art-display"><div class="mini-display"><span>PS2</span><i></i><span>SWING</span></div></div><div class="card-bottom"><h3>PANTALLA DE 7”</h3><p>Un panel de 7 pulgadas para llevar los clásicos a todas partes.</p><span class="card-status">CONFIGURACIÓN PREVISTA</span></div></article>
+            <article class="feature-card" data-number="02" hidden><div class="card-top"><span>02 / ENERGÍA</span><span class="card-symbol">ϟ</span></div><div class="feature-art art-energy"><div class="battery-art"><div class="battery-fill"></div><div class="battery-tip"></div></div><span>POWER / 2S</span></div><div class="card-bottom"><h3>ENERGÍA PORTÁTIL</h3><p>Batería recargable y carga USB-C, con autonomía aún por validar.</p><span class="card-status">EN DESARROLLO</span></div></article>
+            <article class="feature-card" data-number="03" hidden><div class="card-top"><span>03 / SOFTWARE</span><span class="card-symbol">◇</span></div><div class="feature-art art-os"><div class="os-lines"><i></i><i></i><i></i></div><strong>OSD<span>-XMB</span></strong></div><div class="card-bottom"><h3>INTERFAZ OSD-XMB</h3><p>Una experiencia de navegación inspirada en los menús clásicos.</p><span class="card-status">SISTEMA EN PRUEBAS</span></div></article>
+            <article class="feature-card" data-number="04" hidden><div class="card-top"><span>04 / ALMACENAMIENTO</span><span class="card-symbol">▤</span></div><div class="feature-art art-storage"><div class="drive-art">128<span>GB</span></div><div class="drive-line"></div></div><div class="card-bottom"><h3>BIBLIOTECA DIGITAL</h3><p>Almacenamiento externo de 128 GB previsto para cargar tus juegos compatibles.</p><span class="card-status">CONFIGURACIÓN PREVISTA</span></div></article>
+            <article class="feature-card" data-number="05" hidden><div class="card-top"><span>05 / CONTROL</span><span class="card-symbol">✣</span></div><div class="feature-art art-control"><div class="control-art"><span>✚</span><i>● ●<br>● ●</i></div></div><div class="card-bottom"><h3>CONTROLES CLÁSICOS</h3><p>Cruceta, joysticks, gatillos y botones integrados en una carcasa ergonómica.</p><span class="card-status">DISEÑO V3.1</span></div></article>
+            <article class="feature-card" data-number="06" hidden><div class="card-top"><span>06 / AUDIO</span><span class="card-symbol">♫</span></div><div class="feature-art art-audio"><div class="sound-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div><div class="card-bottom"><h3>SONIDO ESTÉREO</h3><p>Altavoces integrados y salida de auriculares para jugar a tu manera.</p><span class="card-status">INTEGRACIÓN PENDIENTE</span></div></article>
+          </div>
+        </div>
+        <div class="feature-actions"><button type="button" class="reveal-btn" id="reveal-btn">REVELAR SIGUIENTE <span aria-hidden="true">→</span></button><span id="reveal-hint" class="feature-hint">CADA CLIC REVELA UNA NUEVA TARJETA</span></div>
+      </section>
+
+      <section class="story section-shell section-pad" id="proyecto">
+        <div class="story-title"><div class="eyebrow"><span class="eyebrow-line"></span> LA HISTORIA <span class="eyebrow-number">/ 003</span></div><h2>NO ES SOLO<br><span>UNA CONSOLA.</span></h2></div>
+        <div class="story-text"><p class="story-lead">Es una idea que nació de una pregunta: <strong>¿y si pudiéramos llevar nuestra PS2 a cualquier lugar?</strong></p><p>PS2 Swing es un proyecto independiente construido alrededor de una consola PlayStation 2 Slim real. Su evolución ha pasado por planos 3D, mecanismos de gatillos, una carcasa personalizada y decisiones de integración electrónica.</p><p>No mostramos un producto terminado: te invitamos a seguir el camino desde el concepto hasta un prototipo funcional.</p><a href="#desarrollo" class="story-link">DESCUBRE NUESTRO PROCESO <span aria-hidden="true">↗</span></a></div>
+      </section>
+
+      <section class="development section-shell section-pad" id="desarrollo">
+        <div class="section-heading development-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> DIARIO DE DESARROLLO <span class="eyebrow-number">/ 004</span></div><h2>DE UNA IDEA<br><span>A ALGO REAL.</span></h2></div><p>Cada decisión técnica nos acerca a la siguiente versión. Este es el estado documentado, no una promesa de lanzamiento.</p></div>
+        <div class="timeline"><div class="timeline-item"><span class="timeline-no">01</span><div><h3>CONCEPTO SWING</h3><p>Diseño inicial con cuerpo central, pantalla de 7” y rieles laterales.</p></div><span class="timeline-tag is-done">DISEÑADO</span></div><div class="timeline-item"><span class="timeline-no">02</span><div><h3>EVOLUCIÓN V3.1</h3><p>Planos de carcasa con mandos integrados, gatillos y ajustes ergonómicos.</p></div><span class="timeline-tag is-done">MODELADO</span></div><div class="timeline-item"><span class="timeline-no">03</span><div><h3>INTEGRACIÓN Y AJUSTES</h3><p>Comprobación de pantallas, electrónica, refrigeración y piezas imprimibles.</p></div><span class="timeline-tag">EN PROCESO</span></div><div class="timeline-item"><span class="timeline-no">04</span><div><h3>PROTOTIPO FINAL</h3><p>Montaje, autonomía real, temperaturas y validaciones de uso.</p></div><span class="timeline-tag">PENDIENTE</span></div></div>
+      </section>
+
+      <section class="support-wrap section-shell section-pad" id="apoyar">
+        <div class="support-panel"><div class="support-grid" aria-hidden="true"></div><div class="support-content"><div class="eyebrow"><span class="eyebrow-line"></span> FORMA PARTE DEL PROYECTO <span class="eyebrow-number">/ 005</span></div><h2>AYUDA A QUE<br><span>EXISTA.</span></h2><p>Tu apoyo voluntario puede ayudarnos a cubrir materiales, pruebas e impresión de nuevas piezas. No es una reserva ni una compra de consola.</p><button type="button" class="support-btn" id="support-btn">APORTA LO QUE QUIERAS <span aria-hidden="true">↗</span></button><span class="support-note">APORTES VOLUNTARIOS · SIN FECHA DE ENTREGA NI RECOMPENSAS GARANTIZADAS</span></div><div class="support-visual" aria-hidden="true"><div class="support-circle circle-a"></div><div class="support-circle circle-b"></div><span class="support-glyph">✳</span></div></div>
+      </section>
+
+      <section class="faq section-shell section-pad" id="faq"><div class="eyebrow"><span class="eyebrow-line"></span> PREGUNTAS FRECUENTES <span class="eyebrow-number">/ 006</span></div><h2>TODO CLARO.</h2><div class="faq-list"><details><summary>¿PS2 Swing ya está a la venta?<span aria-hidden="true">+</span></summary><p>No. Es un proyecto en desarrollo. Actualmente no estamos ofreciendo reservas ni anunciando una fecha de lanzamiento.</p></details><details><summary>¿Cuánto dura la batería?<span aria-hidden="true">+</span></summary><p>La duración se medirá cuando esté terminado el prototipo. Todavía no hay una cifra verificada de autonomía.</p></details><details><summary>¿Qué significa apoyar el proyecto?<span aria-hidden="true">+</span></summary><p>Significa realizar un aporte voluntario, sin adquirir un producto, participación o derecho a recibir una consola. El canal de pago se habilitará cuando esté configurado y verificado.</p></details><details><summary>¿Es un producto oficial de PlayStation?<span aria-hidden="true">+</span></summary><p>No. PS2 Swing es un proyecto independiente de modificación e ingeniería. No está afiliado, avalado ni patrocinado por Sony Interactive Entertainment.</p></details></div></section>
+    </main>
+    <footer class="footer section-shell"><div class="footer-top"><a class="brand" href="#inicio"><span class="brand-mark">P<span>S</span>2</span> <strong>SWING</strong></a><a href="#inicio">VOLVER ARRIBA ↑</a></div><div class="footer-bottom"><span>© <span id="year">2026</span> PS2 SWING · PROYECTO INDEPENDIENTE</span><span>PlayStation y PS2 son marcas de sus respectivos titulares. Sin afiliación oficial.</span></div></footer>
+  </div>
+
+  <dialog class="support-modal" id="support-modal" aria-labelledby="support-modal-title"><div class="modal-inner"><button class="close-modal" type="button" id="close-modal" aria-label="Cerrar">×</button><div class="eyebrow"><span class="eyebrow-line"></span> APORTES VOLUNTARIOS</div><h2 id="support-modal-title">CONSTRUYAMOS<br><span>EL FUTURO.</span></h2><p>Cuando habilitemos un canal de pago verificado, podrás aportar voluntariamente la cantidad que desees. Por ahora, puedes conocer las condiciones del apoyo.</p><div class="support-terms"><span>✓ Aporte voluntario, no compra</span><span>✓ No garantiza una consola ni recompensa</span><span>✓ Los pagos solo se harán en una plataforma segura</span></div><a href="#" id="donate-link" class="primary-btn modal-donate-link" hidden target="_blank" rel="noopener noreferrer">ABRIR PLATAFORMA DE APORTES ↗</a><div class="funding-notice" id="funding-notice">EL CANAL DE APORTES TODAVÍA NO ESTÁ HABILITADO.</div><button type="button" class="modal-dismiss" id="modal-dismiss">ENTENDIDO</button></div></dialog>
+</body>
+</html>
